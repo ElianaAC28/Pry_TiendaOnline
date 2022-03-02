@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/22a0b12f7b.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
@@ -60,6 +61,57 @@
         </div>
     </nav>
     
+    <div class="card-header">
+        <h3>TIENDA DOÑA LUZ, LES DA LA BIENVENIDA</h3>
+    </div>
+
+    <div>
+		<section id="informacion">
+			<h3>Informacion</h3>
+			<article class="articulos">
+				<h4>¿Quienes somos?</h4>
+				<p>En enero del 2000 nace Tienda Doña Luz, es una mercado que brinda alimentos donde los clientes pueden
+                    comodamente tener una gran variedad para escoger. Tienda Doña Luz tiene como meta ser una gran
+                    empresa de la ciudad de Popayán, buscando permanentemente prductos nuevos dando oportunidad a 
+                    productores locales e internacionales de comercializar y hacer conocer su marca.
+
+                    Somos un grupo de personas emprendesoras, apasionadas por el emprendimiento y decididos a llevar los 
+                    mejores priductos a los hogares de todos los patojos.
+                </p>
+			</article>
+
+            <article class="articulos">
+				<h4>Mision</h4>
+				<p>Ser el mejor proveedor y surtidor de mercancia. Para lograrlo, hemos establecido una 
+                    cultura que apoya a los miembros de nuestro equipo para que ellos puedan dar un servicio
+                    excepcional a nuestros clientes.
+                </p>
+			</article>
+
+            <article class="articulos">
+				<h4>Vision</h4>
+				<p>Ser la mejor tienda online y la preferida por los colombianos a la hora de realizar
+                    compras por internet de todas las categorías de productos, siempre destacándose por
+                    su rapidez en los envíos, confiabilidad y precios bajos.
+                </p>
+			</article>
+
+            <article class="articulos">
+				<h4>Valores que nos caracterizan</h4>
+				<p>Honradez, cumplimiento, honestidad y compromiso
+                </p>
+			</article>
+		</section>
+    </div>
+
+    <div>
+        <li id="slider1">
+            <img src="foto1.jpg" width="200" height="200">
+            <div class="textosobreimg1">descripcion......</div>
+        </li>
+    </div>                    
+
+
     
     <section class="py-5">
         <div class="container px-4 px-lg-4 mt-5">
@@ -111,4 +163,52 @@
     
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+    
+<footer>
+    <div class="container__foter">
+
+        <div class="box__footer">
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+            <div class="terms">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam illo tempora
+                    praesentium ipsam, reiciendis quasi corporis. Dolorem cumque ut ipsum soluta. 
+                    Distinctio molestias aspernatur amet, similique repudiandae saepe eaque?
+                </p>
+            </div>
+        </div>
+
+        <div class="box__footer">
+            <h4>Soluciones</h4>
+            <a href="#">App Desarrollo</a>
+            <a href="#">App Marketing</a>
+            <a href="#">IOS Desarrollo</a>
+            <a href="#">Android Desarrollo</a>
+        </div>
+
+        <div class="box__footer">
+            <h4>Compañia</h4>
+            <a href="#">Acerca de</a>
+            <a href="#">Trabajos</a>
+            <a href="#">Proceso</a>
+            <a href="#">Servicios</a>
+        </div>
+
+        <div class="box__footer">
+            <h4>Redes Sociales</h4>
+            <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+            <a href="#"><i class="fa-brands fa-instagram-square"></i> Intagram</a>
+            <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+        </div>
+
+    </div>
+
+    <div class="box_copyright">
+        <hr>
+        <p>2022 &copy; Tiena Doña Luz
+        <b>MagtimusPro</b></p>
+    </div>
+</footer>
 </html>

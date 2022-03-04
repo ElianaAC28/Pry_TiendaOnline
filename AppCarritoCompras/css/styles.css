@@ -88,78 +88,7 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-/*!
----------------------
-*/
-footer {
-  width: 100%;
-  padding: 50px 0px;
-  background-color: white;
-  background-size: cover;
-}
 
-.container__footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.box__footer {
-  display: flex;
-  flex-direction: column;
-  padding: 40px;
-}
-
-.box_footer .terms{
-  max-width: 350px;
-  margin-top: 20px;
-  font-weight: 500;
-  color: #7a7a7a;
-  font-size: 18px;
-}
-
-.box_footer h2{
-  margin-bottom: 30px;
-  color: #343434;
-  font-weight: 700;
-}
-
-.box__footer a{
-  margin-top: 10px;
-  color: #7a7a7a;
-  font-weight: 600;
-}
-
-.box__footera a:hover{
-  opacity: 0.8;
-}
-
-.box__footera .fab{
-  font-size: 20px;
-}
-
-.box__copyright{
-  max-width: 1200px;
-  margin: auto;
-  text-align: center;
-  padding: 0px 40px;
-}
-
-.box__copyright p{
-  margin-top: 20px;
-  color: #7a7a7a;
-}
-
-.box__copyrighthr{
-  border: none;
-  height: 1px;
-  background-color: #7a7a7a;
-}
-/*!
----------------------
-*/
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -5667,6 +5596,7 @@ textarea.form-control-lg {
 .modal-footer > * {
   margin: 0.25rem;
 }
+
 
 @media (min-width: 576px) {
   .modal-dialog {

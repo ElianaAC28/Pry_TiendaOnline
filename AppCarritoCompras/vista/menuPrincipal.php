@@ -17,15 +17,17 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container px-4 px-lg-5">
             
-            <a class="navbar-brand" href="?">TIENDA ONLINE</a>
+            <a class="navbar-brand" href="?">TIENDA DOÑA LUZ</a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                     
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="?"><i class="bi-shop me-1"></i> Ver Productos</a></li>
-                    
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="?c=vista&is=sobreNosotros"><i class="bi-shop me-1"></i> Ver Productos</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="?c=vista&is=sobreNosotros"><i class="bi bi-house-door"></i> Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="?c=vista&is=contacto"><i class="bi bi-telephone"></i> Contacto </a></li>
+
                     <?php
                         session_start();
                         if (isset($_SESSION['carrito'])){
@@ -67,19 +69,19 @@
 
     
     
-<a href="https://wwww.google.com" class="btn btn-primary">IR A GOGOLE </a>
 
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="imagen.png" class="d-block w-100" alt="a1">
+      <img src="img1.png" class="d-block w-100"  alt="a1">
     </div>
     <div class="carousel-item">
-      <img src="foto1.jpg" class="d-block w-100" alt="a2">
+      <img src="img2.png" class="d-block w-100" alt="a2">
     </div>
     <div class="carousel-item">
-      <img src="imagen.png" class="d-block w-100" alt="a3">
+      <img src="img3.png" class="d-block w-100" alt="a3">
     </div>
+  
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>

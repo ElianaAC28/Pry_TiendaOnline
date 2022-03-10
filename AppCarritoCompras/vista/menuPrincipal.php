@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title> TIENDA VIRTUAL</title>
+    <title> TIENDA DOÑA LUZ</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -97,46 +97,56 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
-<footer>
-    <div class="container__foter">
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <nav class="row">
 
-        <div class="box__footer">
-            <div class="logo">
-               
-            
-        </div>
+        <a href="#" class="col-3 text-reset text-uppercase d-flex align-items-center">
+        <img src="./img/logo-white.svg" alt="Logo" class="img-logo">
 
-        <div class="box__footer">
-            <h4>Soluciones</h4>
-            <a href="#">App Desarrollo</a>
-            <a href="#">App Marketing</a>
-            <a href="#">IOS Desarrollo</a>
-            <a href="#">Android Desarrollo</a>
-        </div>
+        <!-- Menu -->
+        <ul class="col-3 list-unstyled">
+            <li class="font-weight-bold text-uppercase">Redes sociales</li>
+            <li><a href="#" class="text-reset">Link1</a></li>
+            <li><a href="#" class="text-reset">Link2</a></li>
+            <li><a href="#" class="text-reset">Link3</a></li>
+      
 
-        <div class="box__footer">
-            <h4>Compañia</h4>
-            <a href="#">Acerca de</a>
-            <a href="#">Trabajos</a>
-            <a href="#">Proceso</a>
-            <a href="#">Servicios</a>
-        </div>
+        </ul>
 
-        <div class="box__footer">
-            <h4>Redes Sociales</h4>
-            <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
-            <a href="#"><i class="fa-brands fa-instagram-square"></i> Intagram</a>
-            <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
-        </div>
+        <!-- Menu -->
+        <ul class="col-3 list-unstyled">
+            <li class="font-weight-bold text-uppercase">Redes sociales</li>
+            <li><a href="#" class="text-reset">Link1</a></li>
+            <li><a href="#" class="text-reset">Link2</a></li>
+            <li><a href="#" class="text-reset">Link3</a></li>
+        
 
+        </ul>
+
+        <!-- Menu -->
+        <ul class="col-3 list-unstyled">
+            <li class="font-weight-bold text-uppercase">Redes sociales</li>
+        <li class="d-flex justify-content-between">
+            <a href="#" class="text-reset">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="text-reset">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-reset">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-reset">
+                <i class="fab fa-pinterest"></i>
+            </a>
+        </li>
+         
+
+        </ul>
+        </nav>
     </div>
-
-    <div class="box_copyright">
-        <hr>
-        <p>2022 &copy; Tiena Doña Luz
-        <b>MagtimusPro</b></p>
-    </div>
+    
 </footer>
     
 

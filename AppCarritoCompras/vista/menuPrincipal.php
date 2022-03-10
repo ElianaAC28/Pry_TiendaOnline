@@ -102,7 +102,7 @@
         <nav class="row">
 
         <a href="#" class="col-3 text-reset text-uppercase d-flex align-items-center">
-        <img src="./img/logo-white.svg" alt="Logo" class="img-logo">
+        <img src="logo-h.png" alt="Logo" class="img-logo">
 
         <!-- Menu -->
         <ul class="col-3 list-unstyled">

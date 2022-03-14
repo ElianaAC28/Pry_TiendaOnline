@@ -3,11 +3,6 @@
 require_once 'clsConexion.php';
 require_once 'clsUsuario.php';
 
-/**
- * Description of clsUsuarioCRUD
- *
- * @author Kevith
- */
 class clsUsuarioCRUD {
     //atributos
     private $conexion;

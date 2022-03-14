@@ -1,9 +1,5 @@
 <?php
-/**
- * Description of clsUsuario
- *
- * @author Kevith
- */
+
 class clsUsuario {
     //atributos
     private $id;

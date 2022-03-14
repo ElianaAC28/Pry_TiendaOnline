@@ -6,38 +6,39 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title> TIENDA DOÑA LUZ</title>
+    <title> CREAR PRODUCTO</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="tienda.png">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-    <style>
-        .contenedor{
-            padding-top: 50px; 
-            padding-bottom: 85px;
-        }
-    </style>
+    <script src="https://kit.fontawesome.com/22a0b12f7b.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-    
     <!-- Navigation-->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container px-4 px-lg-5">
-            
+
             <a class="navbar-brand" href="?">TIENDA DOÑA LUZ</a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                    
-                    <li class="nav-item"><a class="nav-link" aria-current="page" href="?"><i class="bi-shop me-1"></i> Ver Productos</a></li>
-                    
+
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="?"><i class="bi-shop me-1"></i>
+                            Ver Productos</a></li>
+
                     <?php
                         if (isset($_SESSION['carrito'])){
                             
@@ -58,10 +59,10 @@
                         
                         }
                     ?>
-                    
+
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    
+
                     <?php
                         if (empty($_SESSION['user'])){
                             echo '<li class="nav-item"><a class="nav-link" aria-current="page" href="?c=vista&is=login"><i class="bi-file-person-fill me-1"></i> Iniciar Sesion</a></li>';
@@ -73,12 +74,9 @@
             </div>
         </div>
     </nav>
-    
-    
-    
-    
-    <div class="container contenedor col-lg-4 col-md-8 col-sm-12">
-        
+
+    <div class="container contenedor col-lg-4 col-md-8 col-sm-12 py-2">
+
         <?php 
             require_once 'modelo/clsProducto.php';
             if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -109,31 +107,110 @@
                     }
                 }
             }
-        ?> 
-        <h1 class="text-primary text-center">Register Product</h1>
-        <form action="" method="post" enctype="multipart/form-data">
-            <div class="form-group">
-                <label for="exampleInputName">Name</label>
-                <input name="name" type="text" class="form-control" id="exampleInputName" autocomplete="off" aria-describedby="emailHelp" placeholder="Enter name">
-                <small id="emailHelp" class="form-text text-muted">The name is required.</small>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Price</label>
-                <input name="price" type="number" value="0" min="0" step="1" autocomplete="off" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">The price is required.</small>
-            </div>
+        ?>
 
-
-            <div class="form-group">
-                <label for="exampleInputEmail1">Image</label>
-                <input type="file" class="form-control" id="image" name="image" accept=".jpg, .jpeg, .png" multiple>
-                <small id="emailHelp" class="form-text text-muted">The Image is required.</small>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-block"> Create Product</button>
-        </form>
     </div>
-    
+
+    <form class="form">
+        <h2 class="class form__title">Registrar producto</h2>
+        <div class="form__container">
+            <label>Nombre</label>
+            <input name="name" type="text" class="form-control" autocomplete="off" aria-describedby="emailHelp"
+                placeholder="Ingrese el nombre del producto">
+
+            <label>Precio</label>
+            <input name="price" type="number" value="0" min="0" step="1" autocomplete="off" class="form-control"
+                id="exampleInputEmail1" aria-describedby="emailHelp">
+
+            <label>Elija una imagen del producto</label>
+            <input type="file" class="form-control" id="image" name="image" accept=".jpg, .jpeg, .png" multiple>
+
+            <button type="submit" class="form__cta"> Crear producto</button>
+        </div>
+    </form>
+
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
+<footer class="bg-dark text-center text-lg-start ">
+    <!-- Grid container -->
+    <div class=" container p-2 text-white  ">
+        <!--Grid row-->
+        <div class="row my-4">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <img src="logo-h.png" alt="Logo" class="img-logo">
+                    </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-0">Acceso</h5>
+
+                <ul class="list-unstyled">
+
+                    <li>
+                        <a href="?c=vista&is=sobreNosotros" class="text-reset">Más información</a>
+                    </li>
+                    <li>
+                        <a href="?c=vista&is=contacto" class="text-reset">Contactanos</a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-0">Tienda Doña Luz</h5>
+
+                <ul class="list-unstyled">
+
+                    <li><a href="?" class="text-reset">Politicas de privacidad</a></li>
+                    <li><a href="?" class="text-reset">Condiciones de tienda Online</a></li>
+
+                </ul>
+            </div>
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+                <h5 class="text-uppercase">REDES SOCIALES</h5>
+
+                <ul class="list-unstyled mb-0">
+                    <li class="d-flex justify-content-between">
+                        <a href="#" class="text-reset">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-reset">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a href="#" class="text-reset">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-reset">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Copyright -->
+    <div class="text-center text-muted  p-3" style="background-color: rgba(0, 0, 0, 0.2); ">
+        © Copyright - 2022 | Página web Tienda Online Doña Luz | Todos los Derechos Reservados | AC
+        CC
+    </div>
+
+</footer>
+
 </html>

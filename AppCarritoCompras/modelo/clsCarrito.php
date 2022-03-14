@@ -1,10 +1,5 @@
 <?php
 
-/**
- * Description of clsCarrito
- *
- * @author Kevith
- */
 class clsCarrito {
     //atributos
     private $usuario;

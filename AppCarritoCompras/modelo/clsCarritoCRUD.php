@@ -5,11 +5,7 @@ require_once 'clsCarrito.php';
 require_once 'clsProducto.php';
 require_once 'clsUsuario.php';
 
-/**
- * Description of clsCarritoCRUD
- *
- * @author Kevith
- */
+
 class clsCarritoCRUD {
     
     //atributos

@@ -1,16 +1,1 @@
-.card-img-filter{
-    filter: brightness(0.5);
-}
 
-.card-effect:hover .card{
-    clip-path: polygon(
-     50% 0,
-     50% 0,
-     100% 50%,
-     100% 50%,
-     50% 100%,
-     50% 100%,
-     0 50%,
-     0 50%  
-    );
-}

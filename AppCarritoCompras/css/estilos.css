@@ -1,41 +1,136 @@
-.card-img-filter{
-    filter: brightness(0.5);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
+.card-img-filter {
+  filter: brightness(0.5);
 }
 
-.card-effect:hover .card{
-    clip-path: polygon(
-     50% 0,
-     50% 0,
-     100% 50%,
-     100% 50%,
-     50% 100%,
-     50% 100%,
-     0 50%,
-     0 50%  
-    );
+.card-effect:hover .card {
+  clip-path: polygon(
+    50% 0,
+    50% 0,
+    100% 50%,
+    100% 50%,
+    50% 100%,
+    50% 100%,
+    0 50%,
+    0 50%
+  );
 }
 
-.card{
-    transition-duration: 0.6s;
-    clip-path: polygon(
-        50% 0,
-        100% 0,
-        100% 50%,
-        100% 100%,
-        50% 100%,
-        0 100%,
-        0 50%,
-        0 0
-    );
+.card {
+  transition-duration: 0.6s;
+  clip-path: polygon(
+    50% 0,
+    100% 0,
+    100% 50%,
+    100% 100%,
+    50% 100%,
+    0 100%,
+    0 50%,
+    0 0
+  );
 }
 
-.card-img-overlay{
-    transition-duration: 0.6s;
+.card-img-overlay {
+  transition-duration: 0.6s;
 }
-.card-effect:hover .card-img-overlay{
-    transform: scale(0.9);
+.card-effect:hover .card-img-overlay {
+  transform: scale(0.9);
 }
 
-.justificar-text{
-    text-align: justify;
+.justificar-text {
+  text-align: justify;
+}
+
+.icon-service {
+  --box-size: 70px;
+  width: var(--box-size);
+  height: var(--box-size);
+  padding: 10px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.form {
+  width: 90%;
+  margin: auto;
+  border-radius: 1em;
+  padding: 3.5em 1.5em;
+  background-color: #e9f8ff;
+}
+
+.form__container {
+  width: 100%;
+  display: grid;
+  gap: 1em;
+  grid-auto-columns: 100%;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+.form__title {
+  text-align: center;
+  font-size: 1.9em;
+  margin-bottom: 0.4em;
+}
+
+.form__cta {
+  font-family: inherit;
+  background-color: #089fe0;
+  color: #fff;
+  border: none;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 0.7em;
+}
+
+@media screen and (max-width: 320px) {
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  h5 {
+    font-size: 75%;
+    padding-left: 1px;
+    padding-right: 30px;
+  }
+  h3 {
+    font-size: 130%;
+  }
+  img {
+    width: 20%;
+  }
+  .slide img {
+    margin-top: 1000px;
+  }
+}
+@media screen and (min-width: 300px) {
+  card {
+    width: 10px;
+  }
+}
+
+.slide {
+  margin-top: 10px;
+}
+
+.slide img {
+  height: 65pv;
+}
+
+@media screen and (min-width: 300px) {
+  .slide {
+    width: 10px;
+  }
+}
+
+#borde-card {
+  border: none;
 }

@@ -6,38 +6,45 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title> TIENDA DOÑA LUZ</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="tienda.png">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/22a0b12f7b.js" crossorigin="anonymous"></script>
     <style>
-        .contenedor{
-            padding-top: 50px; 
-            padding-bottom: 85px;
-        }
+    .contenedor {
+        padding-top: 50px;
+        padding-bottom: 85px;
+    }
     </style>
 </head>
+
 <body>
-    
+
     <!-- Navigation-->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container px-4 px-lg-5">
-            
+
             <a class="navbar-brand" href="?">TIENDA ONLINE</a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                    
-                    <li class="nav-item"><a class="nav-link" aria-current="page" href="?"><i class="bi-shop me-1"></i> Ver Productos</a></li>
-                    
+
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="?"><i class="bi-shop me-1"></i>
+                            Ver Productos</a></li>
+
                     <?php
                         if (isset($_SESSION['carrito'])){
                             
@@ -58,10 +65,10 @@
                         
                         }
                     ?>
-                    
+
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    
+
                     <?php
                         if (empty($_SESSION['user'])){
                             echo '<li class="nav-item"><a class="nav-link" aria-current="page" href="?c=vista&is=login"><i class="bi-file-person-fill me-1"></i> Iniciar Sesion</a></li>';
@@ -73,12 +80,12 @@
             </div>
         </div>
     </nav>
-    
-    
-    
-    
+
+
+
+
     <div class="container contenedor col-lg-4 col-md-8 col-sm-12">
-        
+
         <?php 
             require_once 'modelo/clsProducto.php';
             require 'modelo/clsProductoCRUD.php';
@@ -111,17 +118,20 @@
                 }
             }
             
-        ?> 
+        ?>
         <h1 class="text-primary text-center">Update Product</h1>
         <form action="" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="exampleInputName">Name</label>
-                <input name="name" value="<?php echo $objP->name; ?>" type="text" class="form-control" id="exampleInputName" autocomplete="off" aria-describedby="emailHelp" placeholder="Enter name">
+                <input name="name" value="<?php echo $objP->name; ?>" type="text" class="form-control"
+                    id="exampleInputName" autocomplete="off" aria-describedby="emailHelp" placeholder="Enter name">
                 <small id="emailHelp" class="form-text text-muted">The name is required.</small>
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Price</label>
-                <input name="price" type="number" value="<?php echo $objP->price; ?>" min="0" step="1" autocomplete="off" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <input name="price" type="number" value="<?php echo $objP->price; ?>" min="0" step="1"
+                    autocomplete="off" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter email">
                 <small id="emailHelp" class="form-text text-muted">The price is required.</small>
             </div>
 
@@ -135,7 +145,8 @@
             <button type="submit" class="btn btn-primary btn-block"> Update Product</button>
         </form>
     </div>
-    
+
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

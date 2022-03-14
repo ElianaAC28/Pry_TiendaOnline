@@ -1,9 +1,5 @@
 <?php
-/**
- * Description of clsConexion
- *
- * @author Kevith
- */
+
 class clsConexion {
     //put your code here
     //atributos

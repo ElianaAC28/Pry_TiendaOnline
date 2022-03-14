@@ -1,9 +1,5 @@
 <?php
-/**
- * Description of clsUsuario
- *
- * @author Kevith
- */
+
 class clsProducto {
     //atributos
     private $cod;
